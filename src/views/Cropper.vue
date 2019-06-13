@@ -83,7 +83,7 @@ export default {
       clientHeight: '',
       clientWidth: ''
     },
-    userPicture: '/img/lodka_1920×315.jpg',
+    userPicture: '/img/lodka_1920x315.jpg',
     userBG: '/img/fullscreen-img.jpg'
   }),
   fromMobx: {
