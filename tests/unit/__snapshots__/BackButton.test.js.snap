@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackButton.vue snapshot 1`] = `
+<div
+  class="backButton"
+>
+  <img
+    alt="example"
+    class="icon"
+    src="../../public/img/icons/corner_left.svg"
+    svg-inline=""
+  />
+   
+  <span>
+    Назад
+  </span>
+</div>
+`;

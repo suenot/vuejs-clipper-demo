@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TylerInput.vue snapshot 1`] = `
+<div
+  class="tyler_input"
+>
+  <input
+    class="form-control"
+    placeholder="placeholder"
+    type="text"
+  />
+</div>
+`;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,5 L1,11 L4.125,11 C4.3321125,11 4.5,11.11195 4.5,11.25 C4.5,11.38805 4.3321125,11.5 4.125,11.5 L1,11.5 L1,12.5 L3.11111111,12.5 C3.32589444,12.5 3.5,12.61195 3.5,12.75 C3.5,12.88805 3.32589444,13 3.11111111,13 L1,13 L1,14 L17,14 L17,5 L8.77541146,10.9363368 C8.71346875,10.9788526 8.41582292,10.9751316 8.351,10.9256526 L1,5 Z M0.303608537,4.00666779 C0.326720259,4.0022916 0.350587646,4 0.375,4 L17.625,4 C17.6494079,4 17.6732719,4.0022916 17.6963811,4.00666779 L18,4.00666779 L18,15.0066678 L0,15.0066678 L0,4.00666779 L0.303608537,4.00666779 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI/Icon/18-mail" transform="translate(0.000000, -4.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#0070C9" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

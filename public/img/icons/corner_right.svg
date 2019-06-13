@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="18px" viewBox="0 0 10 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>corner_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="corner_left" transform="translate(5.000000, 9.000000) scale(-1, 1) translate(-5.000000, -9.000000) " fill="#0070C9" fill-rule="nonzero">
+            <path d="M3,9 L9.7155173,16.2561373 C10.1037972,16.6643495 10.0933051,17.3155173 9.6920825,17.7105614 C9.2908599,18.1056054 8.6508416,18.0949305 8.2625617,17.6867183 L0,9 L8.2625617,0.313281654 C8.6508416,-0.094930539 9.2908599,-0.105605422 9.6920825,0.289438636 C10.0933051,0.684482695 10.1037972,1.33565055 9.7155173,1.74386274 L3,9 Z" id="Path-Copy"></path>
+        </g>
+    </g>
+</svg>

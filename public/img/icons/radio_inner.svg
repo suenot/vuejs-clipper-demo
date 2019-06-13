@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI/Input/Radio" transform="translate(-7.000000, -7.000000)" fill="#0070C9">
+            <g id="Radio">
+                <circle id="Oval" cx="15.75" cy="15.75" r="8.25"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

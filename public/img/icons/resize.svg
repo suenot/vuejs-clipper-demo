@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>resize</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="28.045542%" cy="0%" fx="28.045542%" fy="0%" r="123.19677%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="resize" fill-rule="nonzero">
+            <circle id="Oval" fill="#9B9B9B" cx="16" cy="16" r="16"></circle>
+            <circle id="Oval" fill="url(#radialGradient-1)" cx="16" cy="16" r="16"></circle>
+            <g id="UI/Icon/Resize/1" transform="translate(12.000000, 12.000000)" fill="#FFFFFF">
+                <polygon id="Path-2" points="0 1.5 6.5 8 0 8"></polygon>
+                <polygon id="Path-2-Copy" transform="translate(4.750000, 3.250000) rotate(-180.000000) translate(-4.750000, -3.250000) " points="1.5 -1.77635684e-15 8 6.5 1.5 6.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

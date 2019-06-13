@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI/Icon/18-crop" fill="#0070C9">
+            <path d="M6,12 L12,12 L12,6 L6,6 L6,12 Z M14,12 L14,4 L6,4 L6,0 L4,0 L4,4 L0,4 L0,5.95 L4,5.95 L4,14 L12,14 L12,18 L14,18 L14,14 L18,14 L18,12 L14,12 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
