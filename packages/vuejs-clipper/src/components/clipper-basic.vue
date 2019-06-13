@@ -1,5 +1,6 @@
 <template>
   <div class="clipper-basic">
+    {{ratio}}
     <div
       class="clip-area"
       :class="{ vertical: isVertical }"
@@ -302,6 +303,10 @@ export default {
       default: 'normal'
     },
     ratio: {
+      type: Number,
+      default: NaN
+    },
+    ratioWrap: {
       type: Number,
       default: NaN
     },

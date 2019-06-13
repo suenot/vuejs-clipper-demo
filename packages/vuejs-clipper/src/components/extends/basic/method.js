@@ -147,15 +147,15 @@ const clipperMethods = {
     return { width, height, top, left, right, bottom, maxWidth, maxHeight }
   },
   setRatioWH: function ({ width, height, maxWidth, maxHeight, left, top, right, bottom }) {
-    if (!this.ratio) return { width, height, left, top, right, bottom }
+    if (!this.ratioWrap) return { width, height, left, top, right, bottom }
     // 有設定比例的話進行調整
     const ratioPos = this.ratioPos({ width, height })
     if (ratioPos.x) {
-      height = Math.min(width / this.ratio, maxHeight)
-      width = (height === maxHeight) ? height * this.ratio : width
+      height = Math.min(width / this.ratioWrap, maxHeight)
+      width = (height === maxHeight) ? height * this.ratioWrap : width
     } else {
-      width = Math.min(height * this.ratio, maxWidth)
-      height = (width === maxWidth) ? width / this.ratio : height
+      width = Math.min(height * this.ratioWrap, maxWidth)
+      height = (width === maxWidth) ? width / this.ratioWrap : height
     }
     return { width, height, left, top, right, bottom }
   },
