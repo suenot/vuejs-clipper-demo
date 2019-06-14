@@ -147,23 +147,43 @@ const clipperMethods = {
     return { width, height, top, left, right, bottom, maxWidth, maxHeight }
   },
   setRatioWH: function ({ width, height, maxWidth, maxHeight, left, top, right, bottom }) {
-    if (!this.ratioWrap) return { width, height, left, top, right, bottom }
+    if (!this.ratio) return { width, height, left, top, right, bottom }
     // 有設定比例的話進行調整
     const ratioPos = this.ratioPos({ width, height })
     if (ratioPos.x) {
-      height = Math.min(width / this.ratioWrap, maxHeight)
-      width = (height === maxHeight) ? height * this.ratioWrap : width
+      height = Math.min(width / this.ratio, maxHeight)
+      width = (height === maxHeight) ? height * this.ratio : width
     } else {
-      width = Math.min(height * this.ratioWrap, maxWidth)
-      height = (width === maxWidth) ? width / this.ratioWrap : height
+      width = Math.min(height * this.ratio, maxWidth)
+      height = (width === maxWidth) ? width / this.ratio : height
     }
     return { width, height, left, top, right, bottom }
   },
   initWHTL: function () {
-    let width = 50
-    let height = 50
-    let left = 25
-    let top = 25
+    let width = this.initWidth
+    let height = this.initHeight
+    let left = (100 - this.initWidth) / 2
+    let top = (100 - this.initHeight) / 2
+    if (this.wrapRatio && this.ratio) {
+      const calcH = () => {
+        height = Math.max(width / this.ratio * this.wrapRatio, this.minHeight)
+        top = (100 - height) / 2
+      }
+      const calcW = () => {
+        width = Math.max(height * this.ratio / this.wrapRatio, this.minWidth)
+        left = (100 - width) / 2
+      }
+      if (this.wrapRatio <= this.ratio) {
+        calcH()
+        if (this.minHeight === height) calcW()
+        if (width > 100) throw new Error('Invalid ratio, wrapRatop, minWidth combination')
+
+      } else {
+        calcW()
+        if (this.minWidth === width) calcH()
+        if (height > 100) throw new Error('Invalid ratio, wrapRatop, minWidth combination')
+      }
+    }
     this.setTL$.next({ left, top })
     return { width, height }
   },

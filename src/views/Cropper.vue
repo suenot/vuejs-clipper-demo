@@ -14,13 +14,13 @@
           ref="clipper"
           bg-color="transparent"
           :shadow="shadow"
-          :ratio="ratioImageComputed"
-          :ratioWrap="ratioWrapComputed"
+          :ratio="ratioClipComputed"
+          :wrapRatio="ratioImageComputed"
           :grid="grid"
           :border="border"
           :corner="corner"
           :outline="outline"
-          :key="`clipperKey-${ratioWrapComputed}`"
+          :key="`clipperKey-${ratioClipComputed}`"
           :minWidth="5"
           :minHeight="5"
           :style="{ 'max-width': '100%', 'min-width': minWidth + 'px' }"
@@ -72,7 +72,7 @@ export default {
     minWidth: 200,
     maxHeight: 200,
     UserOrderSizes: {
-      width: 150,
+      width: 170,
       height: 150
     },
     crop: {
@@ -93,10 +93,10 @@ export default {
     clipperBasic
   },
   async mounted(){
-    this.UserOrderSizes = {
-      width: 50,
-      height: 150
-    }
+    // this.UserOrderSizes = {
+    //   width: 170,
+    //   height: 150
+    // }
     // Store.setAppStage('cropper')
     // await this.$nextTick()
     // await this.$nextTick()
@@ -107,23 +107,13 @@ export default {
     loadCb: function() {
       this.naturalWidth = this.$refs.clipper.imgEl.naturalWidth
       this.naturalHeight = this.$refs.clipper.imgEl.naturalHeight
-      // var imgSizes = this.userPictureSize
-      // console.log(imgSizes)
-      // this.ratio = this.$refs.cropperWrapBasic.clientHeight, this.$refs.cropperWrapBasic.clientWidth
-      // console.log(this.userPictureSize.height, this.userPictureSize.width)
-      // console.log(this.$refs.clipper.imgEl.naturalWidth, this.$refs.clipper.imgEl.naturalHeight)
-      // this.ratioImage = this.$refs.clipper.imgEl.naturalWidth/this.$refs.clipper.imgEl.naturalHeight
+      
       var target = [0, 0, this.$refs.cropperWrapBasic.clientWidth, this.$refs.cropperWrapBasic.clientHeight]
       var rect = [0, 0, this.$refs.clipper.imgEl.naturalWidth, this.$refs.clipper.imgEl.naturalHeight ]
       var containedRect = fitRect(rect, target, 'contain')
-      // console.log('***', this.ratioImage)
-      // console.log(containedRect)
+      
       this.minWidth = containedRect[2]
-      // this.$refs.clipper.clip()
-      // console.log(this.$refs.clipper)
-      // this.$refs.clipper.setRatioWH({ width, height, maxWidth, maxHeight, left, top, right, bottom })
-      // this.$refs.clipper.setRatioWH({ width: 50, height: 50, maxWidth: 50, maxHeight: 50, left: 20, top: 20, right: undefined, bottom: undefined })
-      // this.$refs.clipper.setRatioWH({ width: this.$refs.clipper.zoomWH$.width, height: this.$refs.clipper.zoomWH$.height, maxWidth: this.$refs.clipper.zoomWH$.maxWidth, maxHeight: this.$refs.clipper.zoomWH$.maxHeight, left: this.$refs.clipper.zoomTL$.width, top: this.$refs.clipper.zoomTL$.width, right: undefined, bottom: undefined })
+      
       // this.setDimentions()
     },
     setDimentions: async function() {
@@ -169,7 +159,7 @@ export default {
 
   },
   computed: {
-    ratioWrapComputed: function() {
+    ratioClipComputed: function() {
       try{
         return this.UserOrderSizes.width/this.UserOrderSizes.height
       } catch(err) {
